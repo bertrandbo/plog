@@ -5,16 +5,14 @@
 <h2>Billets</h2>
 {% endblock %}
 
-<ul id="post-list" class="no-style">
-	{% for article in articles_page.object_list %}
-		<li>
-			<article>
-			<span>{{ article.date|strftime('%d %b %Y') }}</span> &raquo; <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-			</article>
-		</li>
-	{% endfor %}
-</ul><!-- /#posts-list -->
+{% include "articles.html" %}
 
-{% include 'pagination.html' %}
 </section><!-- /#content -->
 {% endblock content %}
+
+{% block sidebar %}
+<aside id="sidebar">
+	<h2>Sujets</h2>
+	{% include "tag-cloud.html" %}
+</aside><!-- /#sidebar -->
+{% endblock %}
