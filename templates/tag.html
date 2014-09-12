@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block title %}{{ tag }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section id="tag">
+	{% block content_title %}
+	<h2>Billets taggués {{ tag }}</h2>
+	{% endblock %}
+
+	{% include "articles.html" %}
+
+</section><!-- /#content -->
+{% endblock content %}
