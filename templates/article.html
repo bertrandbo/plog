@@ -1,8 +1,9 @@
 {% extends "base.html" %}
+<!-- Overwrite the title to put the article name instead of the site name -->
+{% block title %}{{ article.title|striptags }} - {{ SITENAME }} {% endblock title %}
+
 {% block head %}
   {{ super() }}
-<!-- Overwrite the title to put the article name instead of the site name -->
-  <title>{% block title %}{{ article.title|striptags }}{% endblock title %}</title>
 
   {% for keyword in article.keywords %}
     <meta name="keywords" contents="{{keyword}}" />
