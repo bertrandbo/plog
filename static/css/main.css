@@ -207,11 +207,17 @@ header#banner {
 
 .post-info {
   color: #aaa;
+  font-size: 90%;
   margin-bottom: 1em;
 }
 
   .post-info abbr {
 	text-decoration: none;
+  }
+
+  .post-info a {
+	text-decoration: none;
+	color: #aaa;
   }
 
 .post-tags {

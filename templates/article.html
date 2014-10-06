@@ -29,6 +29,8 @@
  {{ translations.translations_for(article) }}
   </header>
   <div class="post-info">
+	<a href="{{ SITEURL }}/{{ category.url }}">{{ article.category|capitalize }}</a>
+	&nbsp;&raquo;&nbsp;
     <span class="published" title="{{ article.date.isoformat() }}">
       {{ article.date|strftime('%d %b %Y') }}
     </span>
