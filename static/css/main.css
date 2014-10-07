@@ -201,6 +201,14 @@ header#banner {
 /*
 /*****************************************************************************/
 
+blockquote {
+  font-style:italic;
+  color:#333;
+  border-left: 4px solid #aaa;
+  margin-left: -1em;
+  padding-left: 1em;
+}
+
 #content {
 
 }
