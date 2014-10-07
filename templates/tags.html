@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set menuitem = "tags" %}
+{% block content %}
+<section id="tags">
+	<h2>Ligne éditoriale</h2>
+	<ul class="tagcloud">
+		{% for tag in tag_cloud %}
+		    <li class="tag-{{ tag.1 }}"><a href="/tag/{{ tag.0 }}.html">{{ tag.0 }}</a></li>
+		{% endfor %}
+	</ul>
+</section>
+{% endblock %}
