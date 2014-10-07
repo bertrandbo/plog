@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="index">
-{% block content_title %}
-<h2>Billets</h2>
-{% endblock %}
 
-{% include "articles.html" %}
+{% for cat, articles in categories %}
+	<h2>{{ cat|capitalize }}</h2>
+	{% include "articles.html" %}
+{% endfor %}
 
 </section><!-- /#content -->
-{% endblock content %}
+{% endblock content %}}
