@@ -232,38 +232,50 @@ header#banner {
 
   /* standard */
 
-  #content pre {
+ /* #content pre {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
-  }
+  } */
 
   #content ul,
   #content ol {
-    /*margin-left: 1.35em;*/
 	margin-top: -1em;
 	list-style-type: square;
+  }
+
+  code, pre {
+	font: 14px 'Droid Sans Mono', monospace;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
   }
 
   #content code {
     border: 1px solid #ddd;
     background-color: #eef;
-    font-size: 90%;
     padding: 0 .2em;
   }
 
-    #content pre code {
-      border: none;
-    }
-
   #content .highlight pre {
-    border: 1px solid black;
-    background-color: #333;
-    color: white;
+	background: #333;
+	color: #fff;
+	margin-left: -1em;
+	padding: 1em;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	-moz-box-shadow: inset 0 0 10px #000000;
+	box-shadow: inset 0 0 10px #000000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
   }
 
   #content .highlight pre code {
     background-color: #333;
+	border: none;
   }
 
 #related {
