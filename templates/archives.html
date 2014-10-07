@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% set menuitem = "archives" %}
+{% block content %}
+<section id="archives">
+	<h2>Archives</h2>
+	{% set articles = dates %}
+	{% include "articles.html" %}
+</section>
+{% endblock %}
